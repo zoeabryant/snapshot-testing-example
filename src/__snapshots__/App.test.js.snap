@@ -18,13 +18,11 @@ exports[`renders Apple if user likes Apple and Juice 1`] = `
       Welcome to React
     </h1>
   </header>
-  <p
+  <div
     className="App-intro"
   >
-    <h2>
-      Have Apple Juice!
-    </h2>
-  </p>
+    <Apple />
+  </div>
 </div>
 `;
 
@@ -46,13 +44,11 @@ exports[`renders Orange if user likes Juice but not Apple 1`] = `
       Welcome to React
     </h1>
   </header>
-  <p
+  <div
     className="App-intro"
   >
-    <h2>
-      Have Orange Juice!
-    </h2>
-  </p>
+    <Orange />
+  </div>
 </div>
 `;
 
@@ -74,40 +70,42 @@ exports[`renders Tea if user does not like Juice, even though they like Apple 1`
       Welcome to React
     </h1>
   </header>
-  <p
+  <div
     className="App-intro"
   >
-    <h2>
-      Have Tea!
-    </h2>
-  </p>
+    <Tea />
+  </div>
 </div>
 `;
 
 exports[`renders without crashing 1`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
+<App>
+  <div
+    className="App"
   >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
-    <h1
-      className="App-title"
+    <header
+      className="App-header"
     >
-      Welcome to React
-    </h1>
-  </header>
-  <p
-    className="App-intro"
-  >
-    <h2>
-      Have Tea!
-    </h2>
-  </p>
-</div>
+      <img
+        alt="logo"
+        className="App-logo"
+        src="logo.svg"
+      />
+      <h1
+        className="App-title"
+      >
+        Welcome to React
+      </h1>
+    </header>
+    <div
+      className="App-intro"
+    >
+      <Tea>
+        <h2>
+          Have Tea!
+        </h2>
+      </Tea>
+    </div>
+  </div>
+</App>
 `;
